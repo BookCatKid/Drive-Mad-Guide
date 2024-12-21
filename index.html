@@ -88,11 +88,11 @@
             const data = await response.json();
 
             const container = document.getElementById('grid-container');
-            container.innerHTML = data.map(level => `
+            container.innerHTML = data.map((level, i) => `
                 <a href="guides.html?level=${level.level}">
                     <div class="thumbnail" style="background-image: url('${level.thumbnail_url}');"></div>
                     <div class="level-info">
-                        <div class="level-number">${level.title}</div>
+                        <div class="level-number">Level ${i+1}: ${level.title}</div>
                         <div class="level-tags">${level.tags.join(', ')}</div>
                     </div>
                 </a>
@@ -104,3 +104,4 @@
     </script>
 </body>
 </html>
+

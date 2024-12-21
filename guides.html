@@ -38,7 +38,6 @@
 
         .thumbnail {
             flex: 1 1 45%; /* Thumbnail takes up half the container */
-            height: 50vh;
             background-color: #ddd;
             border-radius: 8px;
             background-size: cover;
@@ -130,7 +129,7 @@
                 }
 
                 container.innerHTML = `
-                    <h1>${guide.title}</h1>
+                    <h1>Level ${guide.level}: ${guide.title}</h1>
                     <div class="media-container">
                         <div class="thumbnail" style="background-image: url('${guide.thumbnail_url}');"></div>
                         ${youtubeContent}
@@ -156,3 +155,4 @@
     </script>
 </body>
 </html>
+
