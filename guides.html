@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .media-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .thumbnail {
+            flex: 1 1 45%; /* Thumbnail takes up half the container */
+            height: 50vh;
+            background-color: #ddd;
+            border-radius: 8px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .youtube-video {
+            flex: 1 1 45%; /* YouTube video takes up half the container */
+            height: 50vh;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .no-video {
+            flex: 1 1 45%;
+            height: 50vh; /* Same height as the thumbnail */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f8d7da;
+            color: #721c24;
+            border-radius: 8px;
+            font-size: 18px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .description {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .tags {
+            margin-top: 10px;
+        }
+
+        .tags span {
+            display: inline-block;
+            background-color: #e0e0e0;
+            color: #555;
+            font-size: 14px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin: 5px 5px 0 0;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="guide-container">
+        <!-- Content will be loaded here dynamically -->
+    </div>
+
+    <script>
+        // Fetch JSON data
+        async function loadGuide(level) {
+            const response = await fetch('/levels.json');
+            const data = await response.json();
+            const guide = data.find(g => g.level === level);
+
+            if (guide) {
+                const container = document.getElementById('guide-container');
+                let youtubeContent = '';
+
+                if (guide.youtube_url) {
+                    const youtubeEmbedUrl = guide.youtube_url.replace("watch?v=", "embed/");
+                    youtubeContent = `
+                        <iframe 
+                            class="youtube-video" 
+                            src="${youtubeEmbedUrl}" 
+                            allowfullscreen>
+                        </iframe>
+                    `;
+                } else {
+                    youtubeContent = `
+                        <div class="no-video">
+                            No video available. Please contact me with the issue.
+                        </div>
+                    `;
+                }
+
+                container.innerHTML = `
+                    <h1>${guide.title}</h1>
+                    <div class="media-container">
+                        <div class="thumbnail" style="background-image: url('${guide.thumbnail_url}');"></div>
+                        ${youtubeContent}
+                    </div>
+                    <div class="description">
+                        <p>${guide.instructions}</p>
+                    </div>
+                    <div class="tags">
+                        <strong>Tags:</strong>
+                        ${guide.tags.map(tag => `<span>${tag}</span>`).join('')}
+                    </div>
+                    <p><a href="/">Back to Home</a></p>
+                `;
+            } else {
+                document.getElementById('guide-container').innerHTML = `<p>Guide not found.</p>`;
+            }
+        }
+
+        // Load guide for the current level (e.g., Level 1)
+        const urlParams = new URLSearchParams(window.location.search);
+        const level = parseInt(urlParams.get('level')) || 1;
+        loadGuide(level);
+    </script>
+</body>
+</html>
