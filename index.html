@@ -74,6 +74,19 @@
             font-size: 14px;
             color: #666;
         }
+        .tags {
+            margin-top: 10px;
+        }
+
+        .tags span {
+            display: inline-block;
+            background-color: #e0e0e0;
+            color: #555;
+            font-size: 14px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin: 5px 5px 0 0;
+        }
     </style>
 </head>
 <body>
@@ -93,7 +106,10 @@
                     <div class="thumbnail" style="background-image: url('${level.thumbnail_url}');"></div>
                     <div class="level-info">
                         <div class="level-number">Level ${i+1}: ${level.title}</div>
-                        <div class="level-tags">${level.tags.join(', ')}</div>
+                        <div class="tags">
+                            <strong>Tags:</strong>
+                            ${level.tags.map(tag => `<span>${tag}</span>`).join('')}
+                    </div>
                     </div>
                 </a>
             `).join('');

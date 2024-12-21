@@ -2,31 +2,32 @@
     {
       "level": 1,
       "title": "First Gear",
-      "tags": ["Tag1", "Tag2"],
+      "tags": ["Difficulty: 1", "Normal Car", "Hold", "Hold Right"],
       "thumbnail_url": "thumbnails/level_1.png",
-      "instructions": "Complete the level by reaching the finish line.",
-      "youtube_url": "https://www.youtube.com/watch?v=P8GLDa68dKs"
+      "instructions": "Hold right the whole time to finish, and also occasionaly get gold (if you don't get gold, just try again)",
+      "youtube_url": "https://www.youtube.com/watch?v=LrVdbK9w6iY"
     },
     {
       "level": 2,
       "title": "Back Up",
-      "tags": ["Tag1", "Tag2"],
+      "tags": ["Difficulty: 1", "Normal Car", "Hold", "Hold Left"],
       "thumbnail_url": "thumbnails/level_2.png",
-      "instructions": "Navigate the course by reversing where necessary."
+      "instructions": "Hold left the whole time to finish, which will also give you gold every time.",
+      "youtube_url": "https://www.youtube.com/watch?v=c3wYlyKangc"
     },
     {
       "level": 3,
       "title": "Rope Bridge",
       "tags": ["Tag1", "Tag2"],
       "thumbnail_url": "thumbnails/level_3.png",
-      "instructions": "Cross the rope bridge without falling."
+      "instructions": "TODO"
     },
     {
       "level": 4,
       "title": "Ramp Up",
-      "tags": ["Tag1", "Tag2"],
+      "tags": ["Difficulty: 2", "Normal Car", "Mostly Hold"],
       "thumbnail_url": "thumbnails/level_4.png",
-      "instructions": "Climb the ramp and avoid obstacles."
+      "instructions": "Hold right and then let go momentarily at the bottom of the hill, then hold right the rest of the time"
     },
     {
       "level": 5,
@@ -45,9 +46,10 @@
     {
       "level": 7,
       "title": "Smash Hit",
-      "tags": ["Tag1", "Tag2"],
+      "tags": ["Difficulty: 1", "Different Car", "Hold", "Hold Right"],
       "thumbnail_url": "thumbnails/level_7.png",
-      "instructions": "Break through the barriers to complete the level."
+      "instructions": "Hold right and if you get lucky you'll get gold time. Otherwise, try again.",
+      "youtube_url": "https://www.youtube.com/watch?v=NSNvOmJTcHo"
     },
     {
       "level": 8,
