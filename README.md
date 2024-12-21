@@ -4,7 +4,7 @@ Welcome to my **Drive Mad Guide**! I love **Drive Mad** but had some trouble on 
 
 I also plan to have Gold Score help, because they can be very difficult and confusing (in fact, even I dont know how to get them all!)
 
-You can easily acces drive mad here with the new 100 levels: [Drive Mad on Poki](https://poki.com/en/g/drive-mad)
+You can easily acces drive mad here with the new 100 levels: [Drive Mad on Poki](https://poki.com/en/g/drive-mad) (I do suggest using an adblocker though!)
 ## Project Description
 
 This **Drive Mad Guide** has:
