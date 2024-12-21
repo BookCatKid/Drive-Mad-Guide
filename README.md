@@ -36,7 +36,7 @@ To run this project locally, follow these steps:
    ```
 2. Navigate to the project folder:
    ```
-    cd Drive-Mad-Guide
+   cd Drive-Mad-Guide
    ```
 3. Open the index.html file in your browser to view the guide.
 
