@@ -3,7 +3,7 @@
       "level": 1,
       "title": "First Gear",
       "tags": ["Tag1", "Tag2"],
-      "thumbnail_url": "/thumbnails/level_1.png",
+      "thumbnail_url": "thumbnails/level_1.png",
       "instructions": "Complete the level by reaching the finish line.",
       "youtube_url": "https://www.youtube.com/watch?v=P8GLDa68dKs"
     },
@@ -11,119 +11,120 @@
       "level": 2,
       "title": "Back Up",
       "tags": ["Tag1", "Tag2"],
-      "thumbnail_url": "/thumbnails/level_2.png",
+      "thumbnail_url": "thumbnails/level_2.png",
       "instructions": "Navigate the course by reversing where necessary."
     },
     {
       "level": 3,
       "title": "Rope Bridge",
       "tags": ["Tag1", "Tag2"],
-      "thumbnail_url": "/thumbnails/level_3.png",
+      "thumbnail_url": "thumbnails/level_3.png",
       "instructions": "Cross the rope bridge without falling."
     },
     {
       "level": 4,
       "title": "Ramp Up",
       "tags": ["Tag1", "Tag2"],
-      "thumbnail_url": "/thumbnails/level_4.png",
+      "thumbnail_url": "thumbnails/level_4.png",
       "instructions": "Climb the ramp and avoid obstacles."
     },
     {
       "level": 5,
       "title": "Limo Ledge",
       "tags": ["Tag1", "Tag2"],
-      "thumbnail_url": "/thumbnails/level_5.png",
+      "thumbnail_url": "thumbnails/level_5.png",
       "instructions": "Balance on the ledge and reach the goal."
     },
     {
       "level": 6,
       "title": "Tip Over",
       "tags": ["Tag1", "Tag2"],
-      "thumbnail_url": "/thumbnails/level_6.png",
+      "thumbnail_url": "thumbnails/level_6.png",
       "instructions": "Prevent your vehicle from tipping over."
     },
     {
       "level": 7,
       "title": "Smash Hit",
       "tags": ["Tag1", "Tag2"],
-      "thumbnail_url": "/thumbnails/level_7.png",
+      "thumbnail_url": "thumbnails/level_7.png",
       "instructions": "Break through the barriers to complete the level."
     },
     {
       "level": 8,
       "title": "Square Wheels",
       "tags": ["Tag1", "Tag2"],
-      "thumbnail_url": "/thumbnails/level_8.png",
+      "thumbnail_url": "thumbnails/level_8.png",
       "instructions": "Drive with square wheels and reach the finish."
     },
     {
       "level": 9,
       "title": "Loop the Loop",
       "tags": ["Tag1", "Tag2"],
-      "thumbnail_url": "/thumbnails/level_9.png",
+      "thumbnail_url": "thumbnails/level_9.png",
       "instructions": "Perform a full loop without crashing."
     },
     {
       "level": 10,
       "title": "Draw Bridge",
       "tags": ["Tag1", "Tag2"],
-      "thumbnail_url": "/thumbnails/level_10.png",
+      "thumbnail_url": "thumbnails/level_10.png",
       "instructions": "Time your crossing as the drawbridge moves."
     },
     {
       "level": 11,
       "title": "Rocket Car",
       "tags": ["Tag1", "Tag2"],
-      "thumbnail_url": "/thumbnails/level_11.png",
+      "thumbnail_url": "thumbnails/level_11.png",
       "instructions": "Use the rocket boost to clear gaps."
     },
     {
       "level": 12,
       "title": "Flip Vault",
       "tags": ["Tag1", "Tag2"],
-      "thumbnail_url": "/thumbnails/level_12.png",
+      "thumbnail_url": "thumbnails/level_12.png",
       "instructions": "Vault over obstacles with flips."
     },
     {
       "level": 13,
       "title": "Go West",
       "tags": ["Tag1", "Tag2"],
-      "thumbnail_url": "/thumbnails/level_13.png",
+      "thumbnail_url": "thumbnails/level_13.png",
       "instructions": "Travel westward to find the goal."
     },
     {
       "level": 14,
       "title": "Hyper Car",
       "tags": ["Tag1", "Tag2"],
-      "thumbnail_url": "/thumbnails/level_14.png",
+      "thumbnail_url": "thumbnails/level_14.png",
       "instructions": "Drive at high speed and avoid crashes."
     },
     {
       "level": 15,
       "title": "Snow Plow",
       "tags": ["Tag1", "Tag2"],
-      "thumbnail_url": "/thumbnails/level_15.png",
+      "thumbnail_url": "thumbnails/level_15.png",
       "instructions": "Clear the snow to uncover the path."
     },
     {
       "level": 16,
       "title": "Huge Wheels",
       "tags": ["Tag1", "Tag2"],
-      "thumbnail_url": "/thumbnails/level_16.png",
+      "thumbnail_url": "thumbnails/level_16.png",
       "instructions": "Maneuver with oversized wheels."
     },
     {
       "level": 17,
       "title": "Rubble Road",
       "tags": ["Tag1", "Tag2"],
-      "thumbnail_url": "/thumbnails/level_17.png",
+      "thumbnail_url": "thumbnails/level_17.png",
       "instructions": "Navigate the bumpy rubble road."
     },
     {
       "level": 18,
       "title": "Truck Jump",
       "tags": ["Tag1", "Tag2"],
-      "thumbnail_url": "/thumbnails/level_18.png",
+      "thumbnail_url": "thumbnails/level_18.png",
       "instructions": "Jump over the truck to reach the goal."
     }
 ]
+
