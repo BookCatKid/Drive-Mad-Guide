@@ -103,7 +103,7 @@
     <script>
         // Fetch JSON data
         async function loadGuide(level) {
-            const response = await fetch('/levels.json');
+            const response = await fetch('levels.json');
             const data = await response.json();
             const guide = data.find(g => g.level === level);
 
